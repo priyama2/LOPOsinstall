@@ -680,8 +680,8 @@ if __name__ == "__main__":
     vmInst.copyNetbootImage()
     vmInst.configGrub()
     vmInst.configDHCP()
-    #vmInst.startInstallation()
-    #vmInst.monitorInstallation()
+    vmInst.startInstallation()
+    vmInst.monitorInstallation()
     vmInst.cleanup()
     vmInst.file_addinsystem()
     if vmParser.args.ssl_server and distro.upper() == 'SLES':
